@@ -1,0 +1,242 @@
+body {
+    main {
+        .welcome {
+            padding: 70px 16px;
+            .text-welcome {
+                display: flex;
+                flex-flow: row wrap;
+                :nth-child(3) {
+                    text-decoration: line-through;
+                }
+            }
+            p {
+                max-width: 628px;
+                margin-top: 16px;
+            }
+            .btn-welcome {
+                margin-top: 16px;
+                @include button;
+            }
+        }
+        .episodios {
+            background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+            padding: 0 16px;
+            clip-path: polygon(100% 0%, 100% 97%, 0% 100%, 0% 3%);
+            h2 {
+                padding-top: 64px;
+                margin-bottom: 20px;
+                color: #fff;
+            }
+            .container-channels {
+                iframe {
+                margin-bottom: 10px;
+                height: 232px;
+                width: 100%;
+                border: 0;
+
+                &:nth-last-child(1) {
+                margin-bottom: 140px;
+                }
+                }
+            }
+        }
+        .de-donde-venimos {
+            margin: 0 16px;
+            transform: translate(0, -100px);
+            margin-bottom: -70px;
+            img {
+                width: 100%;
+            }
+            p {
+                margin-top: 10px;
+                margin-bottom: 54px;
+            }
+        }
+        .invitados-estelares {
+            h2 {
+                margin-left: 16px;
+                margin-bottom: 15px;
+            }
+            .container-img {
+                display: flex;
+                flex-direction: column;
+                img {
+                    width: 100%;
+                }
+            }
+    
+        }
+        .algunos-de-nuestros-temas {
+            padding: 0 16px;
+            h2 {
+                margin-bottom: 25px;
+                margin-top: 50px;
+            }
+            .container-temas {
+                margin-bottom: 42px;
+                .tema {
+                    margin-top: 60px;
+                    .icon {
+                        width: 104px;
+                        height: 104px;
+                        margin: 0 auto;
+                    }
+                    .icon-1 {
+                        background-image: url(../img/icon1.svg);
+                    }
+                    .icon-2 {
+                        background-image: url(../img/icon2.svg);
+                    }
+                    .icon-3 {
+                        background-image: url(../img/icon3.svg);
+                    }
+                    .icon-4 {
+                        background-image: url(../img/icon4.svg);
+                    }
+                    h3 {
+                        font-size: 24px;
+                        text-align: center;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        .novedades {
+            padding: 65px 16px;
+            background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+            clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 12%);
+            h2 {
+                margin-bottom: 36px;
+                font-weight: 300;
+                color: #fff;
+                text-align: center;
+            }
+            .btn-novedades {
+                @include button;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    body{
+        main {
+            .welcome {
+                padding: 140px 200px;
+                .text-welcome{
+                    h1, h2 {
+                        font-size: 64px;
+                        line-height: 84px;
+                    }
+                    :nth-last-child(1) {
+                        color: #0000EC;
+                    }
+                }
+                p {
+                    margin-top: 0;
+                }
+                .btn-welcome {
+                    width: 225px;
+                    margin-top: 55px;
+                }
+            }
+            .episodios {
+                padding-top: 185px;
+                clip-path: polygon(100% 0%, 100% 85%, 0% 100%, 0% 15%);
+                h2 {
+                    margin-left: 184px;
+                }
+                .container-channels {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    padding: 0 84px;
+                    iframe {
+                        max-width: 47%;
+                        margin-bottom: 30px;
+                        &:nth-last-child(1) {
+                            margin-bottom: 230px;
+                        }
+                    }
+                }
+            }
+            .de-donde-venimos {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                transform: translate(0, -180px);
+                margin-bottom: -70px;
+                img {
+                    width: auto;
+                    height: 660px;
+                }
+                .de-donde-venimos-text {
+                    width: 40%;
+                    margin: 50px;
+                }
+            }
+            .invitados-estelares {
+                h2 {
+                    margin-left: 200px;
+                    margin-bottom: 36px;
+                }
+                .container-img {
+                    display: flex;
+                    flex-flow: row wrap;
+                    img {
+                        width: 50%;
+                    }
+                }
+            }
+            .algunos-de-nuestros-temas {
+                h2 {
+                    margin-top: 64px;
+                    margin-bottom: 70px;
+                    margin-left: 200px;
+                }
+                .container-temas {
+                    display: flex;
+                    justify-content: center;
+                    .tema {
+                        width: 35%;
+                    }
+                }
+                .novedades {
+                    padding-top: 215px;
+                    padding-bottom: 150px;
+                    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 30%);
+                    .btn-novedades {
+                        width: 245px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    body{
+        main {
+            .de-donde-venimos {
+                margin-left: 200px;
+            }
+            .invitados-estelares {
+                .container-img {
+                    img {
+                        width: 33.33%;
+                    }
+                }
+            }
+            .algunos-de-nuestros-temas {
+                .container-temas {
+                    .tema {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+    }
+}

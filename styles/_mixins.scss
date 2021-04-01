@@ -1,0 +1,48 @@
+@mixin link {
+    font-size: 16px;
+    color: $font_color;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+@mixin hover_link {
+    color: $hover_color;
+    text-decoration-line: line-through;
+}
+
+@mixin active_link {
+    color: $active_link;
+}
+
+@mixin button {
+    background-color: #00F3BB;
+    min-height: 48px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 48px;
+    cursor: pointer;
+    &:hover{
+        color: #fff;
+        background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    }
+}
+
+@mixin menu-mobile-animation {
+    ~ label {
+        .bar-top {
+            transform: rotateZ(45deg) translate(4px, 3px);
+        }
+        .bar-middle {
+            transform: scaleX(0);
+        }
+        .bar-bottom {
+            transform: rotateZ(-45deg) translate(4px, -3px);
+        }
+    }
+    ~ ul {
+        right: 0vw;
+    }
+}
