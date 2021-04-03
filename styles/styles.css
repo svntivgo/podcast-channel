@@ -185,17 +185,15 @@ body main .welcome {
 }
 
 body main .welcome .text-welcome {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  padding-right: 65px;
 }
 
-body main .welcome .text-welcome :nth-child(3) {
+body main .welcome .text-welcome .title .line-through {
   text-decoration: line-through;
+}
+
+body main .welcome .text-welcome .title .color-blue {
+  color: #0000EC;
 }
 
 body main .welcome p {
@@ -365,9 +363,6 @@ body main .novedades .btn-novedades:hover {
   body main .welcome .text-welcome h1, body main .welcome .text-welcome h2 {
     font-size: 64px;
     line-height: 84px;
-  }
-  body main .welcome .text-welcome :nth-last-child(1) {
-    color: #0000EC;
   }
   body main .welcome p {
     margin-top: 0;
