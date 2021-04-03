@@ -3,10 +3,14 @@ body {
         .welcome {
             padding: 70px 16px;
             .text-welcome {
-                display: flex;
-                flex-flow: row wrap;
-                :nth-child(3) {
-                    text-decoration: line-through;
+                padding-right: 65px;
+                .title {
+                    .line-through {
+                        text-decoration: line-through;
+                    }
+                    .color-blue {
+                        color: #0000EC;
+                    }
                 }
             }
             p {
@@ -129,9 +133,6 @@ body {
                     h1, h2 {
                         font-size: 64px;
                         line-height: 84px;
-                    }
-                    :nth-last-child(1) {
-                        color: #0000EC;
                     }
                 }
                 p {
