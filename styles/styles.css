@@ -453,14 +453,14 @@ body main .novedades .btn-novedades:hover {
   body main .algunos-de-nuestros-temas .container-temas .tema {
     width: 35%;
   }
-  body main .algunos-de-nuestros-temas .novedades {
+  body main .novedades {
     padding-top: 215px;
     padding-bottom: 150px;
     -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 30%);
             clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 30%);
   }
-  body main .algunos-de-nuestros-temas .novedades .btn-novedades {
-    width: 245px;
+  body main .novedades .btn-novedades {
+    width: 345px;
     margin: 0 auto;
   }
 }
